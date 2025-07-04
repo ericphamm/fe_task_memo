@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-sans scroll-smooth;
+  }
+
+  body {
+    @apply text-white antialiased bg-[#2F1893];
+  }
+}
+
+
+
+@layer components {
+  .input-field {
+    @apply w-full px-5 py-3 h-[50px] border-2 border-[#EBEAED] rounded-full focus:outline-none focus:border-[#25DAC5] transition-all duration-200 bg-white text-[18px] text-[#1E0E62] font-light;
+  }
+  
+  .bg-section::before {
+    content: '';
+    @apply absolute inset-0;
+    background-color: rgba(47, 24, 147, 0.4); /* #2F1893 with 40% opacity */
+    z-index: 0;
+  }
+}
+
+
