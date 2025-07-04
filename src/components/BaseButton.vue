@@ -15,7 +15,6 @@
   </script>
 
 
-<!-- bg-[#25DAC5] hover:bg-[#00e69a] -->
 
 
 

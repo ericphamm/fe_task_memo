@@ -6,14 +6,14 @@
   >
     <div class="absolute inset-0 bg-[#2F1893] opacity-30 z-0"></div>
 
-    <div class="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-screen px-16 space-y-14">
-      <h2 class="text-white leading-[70px] text-5xl lg:text-[58px] font-bold break-words tracking-[-0.025em] text-center">
+    <div class="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-screen px-6 md:px-16 space-y-14">
+      <h2 class="text-white text-5xl lg:text-[58px] leading-[70px] font-bold break-words tracking-[-0.025em] text-center">
           Easy to setup.<br />
   Easy to maintain
 </h2>
 
 <div class="w-[60%]">
-<p class="text-base md:text-[22px] sm:text-lg font-medium text-center leading-relaxed max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto">
+<p class="text-lg md:text-[22px] font-medium text-center max-w-2xl md:max-w-3xl lg:max-w-4xl mx-auto">
   
   Bootstrap is a widely-used, sleek, intuitive and powerful front-end framework for faster and easier web development.</p>
 </div>

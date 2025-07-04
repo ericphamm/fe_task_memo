@@ -4,7 +4,7 @@
 	  class="relative min-h-screen w-full overflow-x-hidden"
 	>
 
-	<div class="relative z-10 max-w-7xl mx-auto py-20 px-6">
+	<div class="relative z-10 max-w-7xl mx-auto py-24 px-6">
 		<!-- text  -->
 		<div>
 			<div class="text-center mb-16">

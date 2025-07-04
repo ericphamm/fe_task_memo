@@ -39,7 +39,7 @@
           ]"
         />
       </div>
-    <BaseButton href="" class="bg-[#482BE7] hover:bg-blue-700 h-[60px] px-9 text-[18px]" text="Create an Account" />
+    <BaseButton href="#cta" class="bg-[#482BE7] hover:bg-blue-700 h-[60px] px-9 text-[18px]" text="Create an Account" />
 
     </div>
 
