@@ -37,8 +37,6 @@
               ? 'bg-white text-indigo-700'
               : 'text-white'
               ]"
-              :aria-expanded="isMenuOpen"
-              aria-label="Toggle nav menu"
             >
             <FaBars 
             v-if="!isMenuOpen" 
@@ -82,7 +80,7 @@
                 <a href="#cta" @click="closeMenu" :class="navLinkClassMobile()">Blog</a>
               </li>
               <li class="w-full">
-                <a href="#contac" @click="closeMenu" :class="navLinkClassMobile()">Contact</a>
+                <a href="#contact" @click="closeMenu" :class="navLinkClassMobile()">Contact</a>
               </li>
               <li class="w-full"><a href="#cta" @click="closeMenu" :class="navLinkIconClassMobile()">
                   <AkDribbbleFill class="w-5 h-5" />
