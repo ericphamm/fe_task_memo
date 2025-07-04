@@ -68,27 +68,27 @@
               'px-4 pt-2 pb-3 rounded-lg mt-2',
               isScrolled ? 'bg-white shadow-lg' : 'bg-white/70 backdrop-blur-sm'
             ]">
-            <ul class="flex flex-col items-center space-y-1 w-[80%] mx-auto">
-              <li>
+            <ul class="flex flex-col items-center space-y-1 w-[90%] mx-auto">
+              <li class="w-full">
                 <a href="#home" @click="closeMenu" :class="navLinkClassMobile()">Home</a>
               </li>
-              <li>
+              <li class="w-full">
                 <a href="#features" @click="closeMenu" :class="navLinkClassMobile()">Features</a>
               </li>
-              <li>
+              <li class="w-full">
                 <a href="#pricing" @click="closeMenu" :class="navLinkClassMobile()">Pricing</a>
               </li>
-              <li>
+              <li class="w-full">
                 <a href="#cta" @click="closeMenu" :class="navLinkClassMobile()">Blog</a>
               </li>
-              <li>
+              <li class="w-full">
                 <a href="#contac" @click="closeMenu" :class="navLinkClassMobile()">Contact</a>
               </li>
-              <li><a href="#cta" @click="closeMenu" :class="navLinkIconClassMobile()">
+              <li class="w-full"><a href="#cta" @click="closeMenu" :class="navLinkIconClassMobile()">
                   <AkDribbbleFill class="w-5 h-5" />
                  </a>
                 </li>
-              <li><a href="#contact" @click="closeMenu" :class="navLinkIconClassMobile()">
+              <li class="w-full"><a href="#contact" @click="closeMenu" :class="navLinkIconClassMobile()">
                 <AkBehanceFill class="w-5 h-5" />
                   </a>
               </li>
@@ -140,7 +140,7 @@ function navLinkClass() {
 
 function navLinkClassMobile() {
   return [
-  'block px-3 py-2 text-lg text-center font-medium transition-colors duration-200 rounded-md',
+  'w-full block px-3 py-2 text-lg text-center font-medium transition-colors duration-200 rounded-md',
   isScrolled.value || isMenuOpen.value 
     ? 'text-indigo-700 hover:text-blue-900 hover:bg-blue-100' 
     : 'text-indigo-700'
@@ -149,7 +149,7 @@ function navLinkClassMobile() {
 
 function navLinkIconClassMobile() {
   return [
-    'block text-center px-4 py-2 rounded text-indigo-700 text-lg font-medium transition-colors duration-200 hover:text-blue-900 hover:bg-blue-100'
+  'w-full flex justify-center items-center px-4 py-2 rounded text-indigo-700 text-lg font-medium transition-colors duration-200 hover:text-blue-900 hover:bg-blue-100'
   ]
 }
 
