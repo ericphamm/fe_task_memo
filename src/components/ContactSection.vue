@@ -54,19 +54,19 @@
           <form @submit.prevent="submitForm" class="space-y-6">
             <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
               <div class="md:col-span-3">
-                <label for="name" class="block text-sm font-bold mb-2 uppercase tracking-wider text-[#1E0E62]">Your
+                <label for="name" class="block text-base font-bold mb-2 uppercase tracking-wider text-[#1E0E62]">Your
                   Name</label>
                 <input id="name" v-model="form.name" type="text"
                   :class="['input-field', errors.name && 'border-red-500']" class="input-field"
                   placeholder="First name" />
-                <p v-if="errors.name" class="text-red-500 text-sm mt-1">
+                <p v-if="errors.name" class="text-red-500 text-base mt-1">
                   {{ errors.name }}
                 </p>
               </div>
               <!-- budget -->
               <div class="md:col-span-2">
                 <label for="budget"
-                  class="block text-sm font-bold mb-2 uppercase tracking-wider text-[#1E0E62]">Budget</label>
+                  class="block text-base font-bold mb-2 uppercase tracking-wider text-[#1E0E62]">Budget</label>
                 <div class="relative">
                   <select id="budget" v-model="form.budget"
                     class="w-full h-[50px] appearance-none bg-white border-2 border-gray-200 rounded-full px-6 text-xl font-light text-[#1E0E62] focus:outline-none focus:border-[#25DAC5] cursor-pointer pr-12">
@@ -82,24 +82,24 @@
             </div>
             <!-- email -->
             <div>
-              <label for="email" class="block text-sm font-bold mb-2 uppercase tracking-wider text-[#1E0E62]">Input
+              <label for="email" class="block text-base font-bold mb-2 uppercase tracking-wider text-[#1E0E62]">Input
                 Field</label>
               <input id="email" v-model="form.email" type="text"
                 :class="['input-field', errors.email && 'border-red-500']" class="input-field"
                 placeholder="name@mail.com" />
-              <p v-if="errors.email" class="text-red-500 text-sm mt-1">
+              <p v-if="errors.email" class="text-red-500 text-base mt-1">
                 {{ errors.email }}
               </p>
             </div>
             <!-- message -->
             <div>
-              <label for="message" class="block text-sm font-bold mb-2 uppercase tracking-wider text-[#1E0E62]">Your
+              <label for="message" class="block text-base font-bold mb-2 uppercase tracking-wider text-[#1E0E62]">Your
                 Message</label>
               <textarea id="message" v-model="form.message" rows="4" :class="[
                 'input-field resize-none h-[110px] rounded-[10px]',
                 errors.message && 'border-red-500',
               ]" class="input-field resize-none h-[110px] rounded-[10px]" placeholder="Message" />
-              <p v-if="errors.message" class="text-red-500 text-sm mt-1">
+              <p v-if="errors.message" class="text-red-500 text-base mt-1">
                 {{ errors.message }}
               </p>
             </div>

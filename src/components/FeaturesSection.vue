@@ -27,7 +27,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 mt-12 space-y-8 md:space-y-0 md:gap-12">
               <div v-for="(feature, i) in slide.features" :key="i" class="space-y-4">
                 <component :is="feature.icon" class="w-[37.6px] h-[37.6px]" />
-                <h3 class="text-[14px] font-bold tracking-[2px] uppercase">
+                <h3 class="text-base font-bold tracking-[2px] uppercase">
                   {{ feature.title }}
                 </h3>
                 <p class="font-sans font-normal text-base">
