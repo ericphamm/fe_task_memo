@@ -2,7 +2,7 @@
 	<section
 	  id="contact"
 	  class="relative min-h-screen w-full bg-cover bg-center text-white md:flex items-center justify-center overflow-x-hidden"
-	  style="background-image: url('/src/assets/images/contact_bg.jpg')"
+	  :style="{ backgroundImage: `url(${contactBg})` }"
 	>
 	  <div class="absolute inset-0 bg-[#2F1893] opacity-40 z-0"></div>
 
@@ -166,9 +166,9 @@
   </template>
 
   <script setup>
+  import contactBg from '@/assets/images/contact_bg.jpg'
   import { ref } from 'vue'
   import { Check } from 'lucide-vue-next';
-import BaseButton from './BaseButton.vue';
   const sendCopy = ref(false)
   const showSuccess = ref(false)
   const showError = ref(false)

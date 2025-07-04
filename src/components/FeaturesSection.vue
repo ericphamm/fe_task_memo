@@ -2,7 +2,7 @@
   <section
     id="features"
     class="relative min-h-screen w-full bg-cover bg-center py-8 text-white md:flex items-center overflow-x-hidden"
-    style="background-image: url('/src/assets/images/features_bg.jpg')"
+    :style="{ backgroundImage: `url(${featuresBg})` }"
   >
     <div class="absolute inset-0 bg-[#2F1893] opacity-50 z-0"></div>
 
@@ -70,6 +70,7 @@
   </section>
 </template>
 <script setup>
+import featuresBg from '@/assets/images/features_bg.jpg'
 import { Copy, Gem, Handshake, Puzzle, Expand, GlobeLock, ArrowDownUp, Palette } from 'lucide-vue-next'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 

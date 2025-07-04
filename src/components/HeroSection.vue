@@ -1,9 +1,3 @@
-<script setup>
-import AppNavbar from './AppNavbar.vue'
-import herobg from '@/assets/images/hero.jpg'
-import HeroCarousel from './HeroCarousel.vue'
-</script>
-
 <template>
   <section
     class="min-h-screen bg-cover bg-center flex items-center justify-center text-white"
@@ -18,3 +12,9 @@ import HeroCarousel from './HeroCarousel.vue'
     </div>
   </section>
 </template>
+
+<script setup>
+import AppNavbar from './AppNavbar.vue'
+import herobg from '@/assets/images/hero.jpg'
+import HeroCarousel from './HeroCarousel.vue'
+</script>
