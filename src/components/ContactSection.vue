@@ -143,7 +143,7 @@
 
               <button
   type="submit"
-  class="w-[120px] h-[50px] bg-[#25DAC5] text-white text-[18px] font-medium rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:bg-[#00e69a]"
+  class="px-8 md:w-[120px] h-[50px] bg-[#25DAC5] text-white text-[18px] font-medium rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:bg-[#00e69a]"
 >
   Send
 </button>
