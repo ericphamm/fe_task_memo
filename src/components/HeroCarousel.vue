@@ -25,10 +25,6 @@
             : 'bg-transparent border-2 opacity-30 hover:bg-white hover:opacity-100',
         ]" />
       </div>
-
-      <!-- cta button -->
-      <BaseButton href="#cta" class="bg-[#482BE7] hover:bg-blue-700 h-[60px] px-9 text-[18px]"
-        text="Create an Account" />
     </div>
 
     <!-- prev + next buttons -->
@@ -47,7 +43,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import { MdNavigateNext } from "@kalimahapps/vue-icons";
-import BaseButton from "./BaseButton.vue";
 
 const slides = [
   {
@@ -68,6 +63,18 @@ const slides = [
     description:
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
   },
+  {
+  littleTitle: "AI-Powered SaaS",
+  mainTitle: "Smarter Decisions",
+  description:
+    "Leverage real-time insights with our AI-driven dashboards. Our platform analyzes your data continuously to surface trends, predict outcomes, and help your team make faster, more informed decisions.",
+},
+{
+  littleTitle: "AI for Startups",
+  mainTitle: "Automate Everything",
+  description:
+    "Free up your team to focus on what matters. Our smart automation tools handle repetitive tasks, improve customer engagement, and streamline operations — no complex setup required.",
+}
 ];
 
 let intervalId;
