@@ -3,7 +3,7 @@
     <nav 
       :class="[
         'fixed left-0 right-0 z-50 transition-all duration-200',
-        isScrolled 
+        isScrolled || isMenuOpen
           ? 'bg-white shadow-md top-0' 
           : 'bg-transparent top-0 md:top-5'
       ]"
