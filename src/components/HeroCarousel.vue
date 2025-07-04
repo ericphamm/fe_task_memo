@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full min-h-[600px] flex items-center justify-center px-4 text-white overflow-hidden">
+  <div class="relative w-full min-h-[400px] flex items-center justify-center px-4 text-white overflow-hidden">
 
     <div class="flex items-center justify-between w-full max-w-7xl mx-auto">
       <!-- prev arrow -->
@@ -40,7 +40,6 @@
     </div>
   </div>
 </template>
-
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";

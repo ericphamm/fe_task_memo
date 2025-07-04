@@ -5,7 +5,7 @@
     <div class="relative z-10 flex flex-col items-center justify-center text-center h-full overflow-hidden">
         <HeroCarousel />
       <!-- cta button -->
-      <BaseButton href="#cta" class="bg-[#482BE7] hover:bg-blue-700 h-[60px] px-9 text-[18px] mt-14"
+      <BaseButton href="#cta" class="bg-[#482BE7] hover:bg-blue-700 h-[60px] px-9 text-[18px] mt-8"
         text="Create an Account" />
     </div>
   </section>
