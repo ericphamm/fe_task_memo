@@ -1,7 +1,7 @@
 <template>
   <section id="cta"
     class="relative min-h-screen w-full bg-cover bg-center text-white md:flex items-center justify-center overflow-x-hidden"
-    :style="{ backgroundImage: `url(${ctaBg})` }">
+    :style="{ backgroundImage: `url(${ctaBg})` }" style="touch-action: manipulation;">
     <div class="absolute inset-0 bg-[#2F1893] opacity-30 z-0"></div>
     <div
       class="relative z-10 flex flex-col items-center justify-center text-center h-full min-h-screen px-6 md:px-16 space-y-14">

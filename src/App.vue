@@ -9,7 +9,7 @@ import AppNavbar from "./components/AppNavbar.vue";
 </script>
 
 <template>
-  <div class="relative min-h-screen w-full">
+  <div class="relative min-h-screen w-full" style="touch-action: manipulation;">
     <AppNavbar />
     <HeroSection />
     <FeaturesSection />

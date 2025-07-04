@@ -1,5 +1,5 @@
 <template>
-	<section id="pricing" class="relative min-h-screen w-full overflow-x-hidden">
+	<section id="pricing" class="relative min-h-screen w-full overflow-x-hidden" style="touch-action: manipulation;">
 		<div class="relative z-10 max-w-7xl mx-auto py-24 px-6">
 			<!-- text  -->
 			<div>
