@@ -75,7 +75,7 @@
                 : 'bg-white/70 backdrop-blur-sm',
             ]"
           >
-            <ul class="flex flex-col items-center space-y-1 w-[90%] mx-auto">
+            <ul class="flex flex-col items-center space-y-0 w-[90%] mx-auto">
               <li class="w-full">
                 <a href="#home" @click="closeMenu" :class="navLinkClassMobile()"
                   >Home</a
@@ -102,7 +102,7 @@
                   >Blog</a
                 >
               </li>
-              <li class="w-full">
+              <li class="w-full h-11">
                 <a
                   href="#contact"
                   @click="closeMenu"
@@ -114,6 +114,7 @@
                 <a
                   href="#cta"
                   @click="closeMenu"
+                  class="h-11"
                   :class="navLinkIconClassMobile()"
                 >
                   <AkDribbbleFill class="w-5 h-5" />
@@ -123,6 +124,7 @@
                 <a
                   href="#contact"
                   @click="closeMenu"
+                  class="h-11"
                   :class="navLinkIconClassMobile()"
                 >
                   <AkBehanceFill class="w-5 h-5" />
