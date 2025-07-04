@@ -1,14 +1,14 @@
 <template>
-  <div class="relative w-full min-h-[400px] flex items-center justify-center px-4 text-white overflow-hidden">
+  <div class="relative w-full min-h-[400px] flex items-center justify-center px-4 text-white overflow-hidden" style="touch-action: manipulation;">
 
-    <div class="flex items-center justify-between w-full max-w-7xl mx-auto">
+    <div class="flex items-center justify-between w-full max-w-7xl mx-auto overflow-x-hidden">
       <!-- prev arrow -->
       <button @click="prevSlide"
         class="p-3 rounded-full bg-transparent transition-all duration-300 transform hover:scale-125 z-10 flex-shrink-0">
         <MdNavigateNext class="w-9 h-9 rotate-180" />
       </button>
       <!-- slides -->
-      <div class="flex flex-col mx-auto items-center space-y-14 px-2 py-4 flex-grow overflow-hidden">
+      <div class="flex flex-col mx-auto items-center space-y-14 px-2 py-4 flex-grow overflow-x-hidden">
         <div class="flex transition-transform duration-700 ease-in-out w-full"
           :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
           <div v-for="(slide, index) in slides" :key="index" class="w-full flex-shrink-0 text-center space-y-6">
