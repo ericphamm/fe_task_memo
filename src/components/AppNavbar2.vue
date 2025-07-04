@@ -33,11 +33,9 @@
             <button
               @click="toggleMenu"
               :class="['p-2 rounded-md transition-colors duration-300',
-              isMenuOpen
+              isMenuOpen || isScrolled
               ? 'bg-white text-indigo-700'
-              : isScrolled
-                ? 'text-indigo-700'
-                : 'text-white'
+              : 'text-white'
               ]"
               :aria-expanded="isMenuOpen"
               aria-label="Toggle nav menu"
@@ -45,17 +43,15 @@
             <FaBars 
             v-if="!isMenuOpen" 
             :class="[
-  'w-8 h-8 transition-colors duration-300',
-  isMenuOpen
-    ? 'text-indigo-700'
-    : isScrolled
-      ? 'text-indigo-700'
-      : 'text-white'
-]"/>
+            'w-8 h-8 transition-colors duration-30 hover:text-opacity-70 hover:scale-105',
+            isMenuOpen || isScrolled
+            ? 'text-indigo-700'
+            : 'text-white'
+            ]"/>
             <AkXSmall 
             v-if="isMenuOpen" 
             :class="[
-            'w-8 h-8 transition-colors duration-300',
+            'w-8 h-8 transition-colors duration-300 hover:text-opacity-70 hover:scale-105',
             isScrolled.value ? 'text-indigo-700' : 'text-indigo-700']"/>
             </button>
           </div>
@@ -144,8 +140,10 @@ function navLinkClass() {
 
 function navLinkClassMobile() {
   return [
-    'block px-3 py-2 text-lg text-indigo-700 text-center font-medium transition-colors duration-200 hover:opacity-80 rounded-md hover:bg-blue-100',
-    isScrolled.value ? 'text-indigo-700' : 'text-white hover:opacity-30'
+  'block px-3 py-2 text-lg text-center font-medium transition-colors duration-200 rounded-md',
+  isScrolled.value || isMenuOpen.value 
+    ? 'text-indigo-700 hover:text-blue-900 hover:bg-blue-100' 
+    : 'text-indigo-700'
   ]
 }
 
