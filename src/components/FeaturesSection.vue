@@ -1,7 +1,7 @@
 <template>
   <section id="features"
     class="relative min-h-screen w-full bg-cover bg-center py-8 text-white md:flex items-center overflow-x-hidden "
-    :style="{ backgroundImage: `url(${featuresBg})` }" style="touch-action: manipulation;">
+    :style="{ backgroundImage: `url(${featuresBg})` }">
     <div class="absolute inset-0 bg-[#2F1893] opacity-50 z-0"></div>
     <div class="z-10 relative flex flex-col lg:flex-row items-center justify-start gap-10 w-full">
       <!-- laptop  -->
